@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe8f3">
+  <title>DOLLZ WORLD — Y2K Adventure</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Dollz World">
+        <span class="brand-star">✦</span><span>DOLLZ<span class="brand-light">WORLD</span></span>
+      </a>
+      <div class="top-note">★ YOUR DREAM LOOK STARTS HERE ★</div>
+      <div class="top-pill"><span class="live-dot"></span> FASHION MODE</div>
+    </header>
+
+    <section class="game-layout">
+      <aside class="side-panel left-panel">
+        <div class="sticker sticker-heart">♡</div>
+        <p class="eyebrow">THE Y2K COLLECTION</p>
+        <h1>Style your<br><em>own story.</em></h1>
+        <p class="side-copy">A little sparkle, a little attitude, and a whole lot of pink.</p>
+        <div class="mini-card">
+          <span class="mini-icon">🦋</span>
+          <div><b>COLLECT THE CUTE</b><small>3 iconic accessories</small></div>
+        </div>
+        <div class="side-bottom">EST. 2000 <span>✧</span> MADE OF MAGIC</div>
+      </aside>
+
+      <section class="game-card" aria-label="Игровое поле">
+        <div class="game-heading">
+          <div><span class="eyebrow">LEVEL 01</span><h2>Pink runway rush</h2></div>
+          <div class="level-tag">THE CITY OF GLAM <span>♡</span></div>
+        </div>
+        <div class="stats-row">
+          <div class="stat"><span class="stat-icon">✧</span><div><small>ACCESSORIES</small><b id="score">0 <i>/ 3</i></b></div></div>
+          <div class="stat"><span class="stat-icon">♛</span><div><small>BEST LOOK</small><b id="best">0</b></div></div>
+          <div class="stat status-stat"><span class="status-dot"></span><div><small>STATUS</small><b id="status">READY</b></div></div>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="game" width="960" height="540" aria-label="Платформер DOLLZ WORLD"></canvas>
+          <div class="screen-overlay" id="overlay">
+            <div class="overlay-sparkle">✦　♡　✧</div>
+            <p class="overlay-kicker" id="overlay-kicker">WELCOME TO THE</p>
+            <h3 id="overlay-title">DOLLZ WORLD</h3>
+            <p id="overlay-text">Collect all the cute things<br>and own the runway.</p>
+            <button class="primary-btn" id="start-btn">LET'S PLAY <span>↗</span></button>
+            <div class="overlay-foot">A Y2K DREAM EXPERIENCE · 2000 FOREVER</div>
+          </div>
+        </div>
+
+        <div class="game-controls">
+          <div class="control-hint"><kbd>←</kbd><kbd>→</kbd> or <kbd>A</kbd><kbd>D</kbd> <span>MOVE</span><i>·</i><kbd>SPACE</kbd> / <kbd>W</kbd> <span>JUMP</span></div>
+          <div class="action-buttons">
+            <button class="soft-btn" id="pause-btn" disabled>Ⅱ PAUSE</button>
+            <button class="soft-btn restart-btn" id="restart-btn">↻ RESTART</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="side-panel right-panel">
+        <div class="sparkle-orbit">✧</div>
+        <p class="eyebrow">THE MISSION</p>
+        <h2>Complete<br>the <em>look!</em></h2>
+        <div class="collect-list">
+          <div class="collect-item"><span class="collect-emoji">👜</span><div><b>IT BAG</b><small>One of a kind</small></div><span class="collect-check" id="item-0">○</span></div>
+          <div class="collect-item"><span class="collect-emoji">🕶️</span><div><b>SHADES</b><small>Too cool for rules</small></div><span class="collect-check" id="item-1">○</span></div>
+          <div class="collect-item"><span class="collect-emoji">💎</span><div><b>BLING</b><small>More is more</small></div><span class="collect-check" id="item-2">○</span></div>
+        </div>
+        <div class="tip-card"><span>💌</span><p><b>STYLE TIP</b><br>Don't forget to grab every accessory before reaching the finish!</p></div>
+        <div class="right-footer">XOXO, DOLLZ <span>♡</span></div>
+      </aside>
+    </section>
+
+    <footer class="page-footer">
+      <span>© DOLLZ WORLD 2000–FOREVER</span><span>GLITTER IS A GIRL'S BEST FRIEND ✦</span><span>PRESS PLAY, FEEL CUTE</span>
+    </footer>
+  </main>
+
+  <div class="mobile-controls" aria-label="Сенсорное управление">
+    <div class="move-pad">
+      <button data-control="left" aria-label="Влево">←</button>
+      <button data-control="right" aria-label="Вправо">→</button>
+    </div>
+    <button class="jump-pad" data-control="jump" aria-label="Прыжок">JUMP <span>✧</span></button>
+  </div>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
